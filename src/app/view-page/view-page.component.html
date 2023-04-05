@@ -1,0 +1,81 @@
+<div class="pg-layout">
+  <img src="../../assets/pg-bg-1.png" alt="" />
+  <div class="bold-txt">
+    <span>Seeking Wellbeing?</span>
+    <span>You're in the right place.</span>
+  </div>
+  <div class="tabs-chip">
+    <div class="tab">
+      <li>APPOINTMENTS</li>
+      <li>CLASSES</li>
+      <li>ONLINE</li>
+    </div>
+    <div class="chip">
+      <div class="breadcrumb">
+        <div class="cp_1">
+          <img class="icon" src="../../assets/search-green.svg" alt="" />
+          <span>Search for a service, provider or symptom</span>
+        </div>
+        <div class="border"></div>
+        <div class="cp_2">
+          <img class="icon" src="../../assets/location.svg" alt="" />
+          <span>Select a location</span>
+        </div>
+        <div class="border"></div>
+        <div class="cp_3">
+          <img class="icon" src="../../assets/calendar.svg" alt="" />
+          <span>When do you want to go?</span>
+        </div>
+        <div class="cp_4">Discover</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="services">Discover wellbeing services near you</div>
+<div class="card-info">
+  Displaying nearby wellbeing for <span class="city">Hawthorn</span>
+  <span class="arrow"><img src="../../assets/down-arrow.svg" alt="" /></span>
+</div>
+<div class="card-container">
+  <div class="cards" *ngFor="let card of cards">
+    <div class="card">
+      <div class="heading">
+        <img [src]="card.image" alt="" />
+        <div class="title-container">
+          <div class="place">
+            <div class="title">SUNBEAR SHIATSU</div>
+            <div class="sub-title">HAWTHORN</div>
+            <div class="rating">
+              4.8
+              <span>
+                <li><img src="../../assets/star.svg" alt="" /></li>
+                <li><img src="../../assets/star.svg" alt="" /></li>
+                <li><img src="../../assets/star.svg" alt="" /></li>
+                <li><img src="../../assets/star.svg" alt="" /></li>
+                <li><img src="../../assets/star.svg" alt="" /></li>
+              </span>
+            </div>
+          </div>
+          <div class="city"><img src="../../assets/heart.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="service">
+          <div class="title"><strong>Naturopathic Consultation</strong></div>
+          <div class="price"><strong>$50</strong> / hour</div>
+        </div>
+        <div class="divider"></div>
+        <div class="dates">
+          <div class="date">Today, June 28</div>
+          <div class="times">Show all times</div>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn">11:00 AM</button>
+        <button class="btn">11:15 AM</button>
+        <button class="btn">+29 more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="more">FIND MORE WELLBEING NEARBY</div>
